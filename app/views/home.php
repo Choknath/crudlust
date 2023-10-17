@@ -12,8 +12,7 @@
             background-color: #f2f2f2;
 
         }
-     
-
+        
         h1 {
             text-align: center;
             margin-top: 20px;
@@ -108,7 +107,7 @@
     </style>
 <body>
          
-<h1>Student Information</h1>
+<h1 class="smoke-effect">Student Information</h1>
     <form action="/<?=(isset($edit['ID']))? "submitedit/" . $edit['ID']: "submit" ?>" method="post">
         <label>StudentID:</label>
         <input type="text"  name="studentID" required value="<?=(isset($edit['ID']))? $edit['studentID']: ""?>">
